@@ -16,7 +16,6 @@ understand break-even prices and margin per tonne during harvest.
 ## Who this is for
 - Grain growers
 - Farm managers
-- Agronomy and advisory discussions
 - Educational use
 
 ## How to use
