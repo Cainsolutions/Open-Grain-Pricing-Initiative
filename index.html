@@ -1,25 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Free Grain Pricing Tool</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Grain Pricing Initiative</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 700px; margin: 60px auto; padding: 0 20px; color: #333; }
-    h1 { color: #2c5f2e; }
-    a.download { display: inline-block; background: #2c5f2e; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; margin: 20px 0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #f5f5f0; color: #2d2d2d; }
+
+    header {
+      background: #2c5f2e;
+      color: white;
+      padding: 48px 24px 36px;
+      text-align: center;
+    }
+    header h1 { font-size: 2.2em; margin-bottom: 10px; }
+    header p { font-size: 1.1em; opacity: 0.9; max-width: 620px; margin: 0 auto; }
+
+    .badge {
+      display: inline-block;
+      background: #ffffff22;
+      border: 1px solid #ffffff55;
+      color: white;
+      font-size: 0.8em;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-top: 14px;
+    }
+
+    .container { max-width: 780px; margin: 0 auto; padding: 40px 24px; }
+
+    section { background: white; border-radius: 8px; padding: 32px; margin-bottom: 28px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
+    section h2 { color: #2c5f2e; font-size: 1.3em; margin-bottom: 16px; border-bottom: 2px solid #e8f0e8; padding-bottom: 10px; }
+
+    p, li { line-height: 1.7; font-size: 0.97em; }
+    ul { padding-left: 20px; margin-top: 8px; }
+    li { margin-bottom: 6px; }
+
+    .download-btn {
+      display: block;
+      width: 100%;
+      background: #2c5f2e;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: bold;
+      margin-top: 8px;
+      transition: background 0.2s;
+    }
+    .download-btn:hover { background: #1e4220; }
+
+    .video-wrap {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 6px;
+      margin-top: 8px;
+    }
+    .video-wrap iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+    }
+
+    .disclaimer {
+      background: #fff8e1;
+      border-left: 4px solid #f9a825;
+      border-radius: 6px;
+      padding: 20px 24px;
+    }
+    .disclaimer h2 { color: #b45309; border-bottom-color: #fde68a; }
+    .disclaimer p { color: #5a3e00; font-size: 0.93em; }
+
+    footer {
+      text-align: center;
+      padding: 28px;
+      font-size: 0.85em;
+      color: #888;
+    }
   </style>
 </head>
 <body>
-  <h1>Free Grain Pricing Tool</h1>
-  <p>A practical Excel model for grain growers to calculate break-even price and margin per tonne during harvest.</p>
-  <a class="download" href="Open_Grain_Pricing_Initiative__Excel_Workbook_-locked.xlsm">Download Excel Model</a>
-  <h2>Features</h2>
-  <ul>
-    <li>Cost per tonne calculation</li>
-    <li>Margin per tonne</li>
-    <li>Warehousing cost modelling</li>
-    <li>Free and non-commercial</li>
-  </ul>
-  <h2>Disclaimer</h2>
-  <p>This tool is for educational purposes only and does not constitute financial or investment advice.</p>
+
+<header>
+  <h1>Open Grain Pricing Initiative</h1>
+  <p>A free Excel tool helping grain growers understand their cost per tonne, break-even price, and harvest margin — built for small to medium agribusiness.</p>
+  <span class="badge">Free &amp; Non-Commercial</span>
+</header>
+
+<div class="container">
+
+  <!-- About -->
+  <section>
+    <h2>About This Tool</h2>
+    <p>The Open Grain Pricing Initiative is a non-profit project created to give grain growers access to the same margin clarity that large agribusinesses take for granted. The model is built in Excel and designed to be straightforward — enter your costs, yield, and current price, and the tool does the rest.</p>
+    <br>
+    <p>Whether you are managing a single crop paddock or planning across a season, this tool helps you make calm, numbers-based decisions at the bin rather than relying on gut feel under harvest pressure.</p>
+  </section>
+
+  <!-- Features -->
+  <section>
+    <h2>What the Tool Does</h2>
+    <ul>
+      <li>Calculates <strong>cost per tonne</strong> from your input costs and yield</li>
+      <li>Shows your <strong>margin per tonne</strong> at current market prices</li>
+      <li>Models <strong>warehousing and storage costs</strong> over time</li>
+      <li>Provides a <strong>quick calculator</strong> for any tonnage and sale price</li>
+      <li>Breaks down costs by input line across your crop acreage</li>
+      <li>Locked formulas to prevent accidental edits</li>
+    </ul>
+  </section>
+
+  <!-- How to Use -->
+  <section>
+    <h2>How to Use</h2>
+    <ul>
+      <li><strong>Step 1 —</strong> Download the Excel file using the button below</li>
+      <li><strong>Step 2 —</strong> Open the file and enable editing if prompted</li>
+      <li><strong>Step 3 —</strong> Enter your total acres and crop acreage in the yellow input cells</li>
+      <li><strong>Step 4 —</strong> Enter your input costs — seed, fertiliser, chemical, and urea</li>
+      <li><strong>Step 5 —</strong> Enter your tonnes harvested and current market price</li>
+      <li><strong>Step 6 —</strong> Review your cost per tonne, margin per tonne, and profit figures</li>
+      <li><strong>Step 7 —</strong> Use the warehousing section to model holding costs over time</li>
+    </ul>
+    <br>
+    <p>All yellow-highlighted cells are inputs. All other cells are calculated automatically — do not edit them.</p>
+  </section>
+
+  <!-- Video -->
+  <section>
+    <h2>Watch: How to Use the Tool</h2>
+    <div class="video-wrap">
+      <iframe
+        src="https://www.youtube.com/embed/znkF7cm-wIs"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Download -->
+  <section>
+    <h2>Download</h2>
+    <p>The tool is free to download and share for non-commercial purposes. No sign-up required.</p>
+    <br>
+    <a class="download-btn" href="Open_Grain_Pricing_Initiative__Excel_Workbook_-locked.xlsm">
+      ⬇ Download the Excel Model
+    </a>
+  </section>
+
+  <!-- Disclaimer -->
+  <section class="disclaimer">
+    <h2>Financial Disclaimer</h2>
+    <p>This tool is provided for <strong>educational and informational purposes only</strong>. It does not constitute financial, investment, marketing, or commercial advice of any kind. The outputs generated by this model are based solely on the data entered by the user and are not a substitute for professional financial or agronomic advice.</p>
+    <br>
+    <p>No warranty is made regarding the accuracy, completeness, or suitability of this tool for any particular purpose. Users should seek independent professional advice before making any grain marketing or financial decisions. The creator of this tool accepts no liability for any loss or damage arising from its use.</p>
+  </section>
+
+</div>
+
+<footer>
+  <p>Open Grain Pricing Initiative &mdash; Created by Robert Cain &mdash; Free for non-commercial use</p>
+</footer>
+
 </body>
 </html>
